@@ -1,0 +1,71 @@
+In this project, we will be creating an app with 3 primary functions:
+    1. The app will allow any user that visits its page to submit an idea for an adventure/activity that they have
+        done and enjoyed.
+        a. Submitting said idea will probably involve filling out several fields in a form, including title
+            description of activity/adventure, some type of location, etc. This may possibly occur on
+            another page, instead of on the front page, if it looks cleaner and we have the time to do this.
+    2. Click a randomize adventure finder button, which randomly selects an adventure item (probably
+            just displays the adventure title, with a link), which is linked to the full adventure
+            item listing. 
+        a. Inside said listing, the user can comment/reply about their own experiences, or 
+            really anything that they want to mention.
+        b. We are considering either limiting our community base to a certain geographical location (e.g.,
+            Utah, maybe Salt Lake City), or creating a randomize function that can calculate and only
+            output adventure items that have location listings within a certain mile-radius of search user's
+            location. 
+    3. Have there be an unobstrusive function that lets users return to selected adventures that they 
+        have created, viewed, and/or commented on. This way, they can keep track of adventures that 
+        interest them, keep tabs on comments that they may want to reply to, etc.
+        a. We do not want every randomized adventure to be accessible, only ones that the user has actively
+            shown interest in, either via comments, or maybe via a "remember this" button of some sort.
+        b. We do not want to have a full-blown search by design, as searches tend to make things feel more...
+            complicated and overwhelming. It may not be as targeted, but a simple "randomize" button is
+            simple, clean-looking, adds a sense of "adventure" to our Adventure App, and shows only one
+            adventure at a time, so that users do not feel overwhelmed.
+        c. We will probably want a login/authentication system. But on the off chance that we cannot get
+            one to work, we can probably get around that to still provide users with a way to get back
+            to an adventure that they want to track, by offering a way to export a randomly generated
+            "id" string that is originally created at time of item creation. Then on the main page, the
+            user can "unlock" adventure with said "id" string via a little enter password/id input box.
+
+-------
+
+The app addresses the following problem:
+
+Many people want to go on adventures, see interesting sights, eat interesting food, have just
+interesting experiences in general. Often times, they don't know what it is that they actually
+want to do. For many of these people, trying to look up this information is daunting. Countless
+websites offer complex search engines with massive and sometimes inaccurate result queues makes
+the entire process painful, cause anxieties and a sense of overwhelming helplessness. Often times,
+even if a relevant result is found, it is impersonal, sponsored or created by organizations that
+are trying to advertise their business. 
+
+-------
+
+Our app offers the perfect niche solution to this problem:
+    1. Instead of a complex search queue, we a simple "randomize" function that will take a random
+        adventure option, and offer it up for the user to consider. It's stress-free, small in
+        scale, and doesn't require the user to try thinking up "keywords" to adventures when they
+        don't yet know what it is that they themselves want.
+    2. We offer a clean and uncluttered front page, free from unnecessary options and links. Once
+        again, this offers our users a relaxing and easy to navigate option for when they just want
+        to check out some adventure ideas.
+    3. Our sites' adventures are primarily maintained by our community. Instead of businesses trying
+        to advertise themselves, we would like the adventure ideas to be created by other users,
+        especially those that have gone and done the adventure that they are sharing. In the preview
+        build, we will not have many, if any, ways of enforcing this. But ideally, if the app
+        grows out of its infancy, we could have human mods or a community report function to sort 
+        through bot posts, disguised business advertisement posts, and so on.
+    
+-------
+
+Added benefits of our app design/direction, which may be advantageous in the future:
+    1. The app is small. It doesn't have many risky interdependencies with 3rd party APIs, or at the very least
+        its core functionalities are not tied to them. This helps with its maintenance.
+    2. The app is small. Its frontend would easily fit into other sites, fulfilling functionality without
+        cluttering up space for another website.
+    3. The core concept of the app, a small sharing website with a randomize-1-thing function, can be
+        applied to other types of ideas. It could be tailored towards party ideas, story prompt ideas,
+        educational purposes, literally anything and everything. All that would have to change is
+        the community and what they enter into the database. All this could be controlled through human
+        mods and community voting, similar to a website like reddit.
