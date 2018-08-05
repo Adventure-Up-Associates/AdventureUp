@@ -13,9 +13,6 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/logout">
-                    Logout
-                </a>
                 <a class="navbar-brand" href="/homePage">
                     Back to home page
                 </a>
@@ -24,12 +21,31 @@
     </nav>
     <form class="clearfix mb-4" action="POST">
         <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
+            <label for="title-text">Title of Your Adventure</label>
+            <input type="text" id="title-text" class="form-control" aria-describedby="title-text" placeholder="Make a descriptive and catchy title!">
         </div>
         <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
+            <label for="description-text">Description of Adventure</label>
+            <textarea class="form-control" id="description-text" aria-describedby="description-text" placeholder="Explain why your adventure is so awesome!"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="location-text">Location (or nearby location)</label>
+            <textarea class="form-control" id="location-text" aria-describedby="location-text" placeholder="Important! Be specific about location of adventure! Preferably something google map can find!"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="difficulty-selection">Select its difficulty!</label>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="radio_easy" name="customRadioInline" class="custom-control-input">
+                <label class="custom-control-label" for="radio_easy">Easy (for everybody)</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="radio_medium" name="customRadioInline" class="custom-control-input">
+                <label class="custom-control-label" for="radio_medium">Medium (for those not afraid to get a little dirty)</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="radio_hard" name="customRadioInline" class="custom-control-input">
+                <label class="custom-control-label" for="radio_hard">Difficult (not for the faint of heart, for those wanting a challenge!)</label>
+            </div>
         </div>
         <button id="submit" class="btn btn-primary float-right">Submit</button>
     </form>
