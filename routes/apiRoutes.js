@@ -52,6 +52,12 @@ module.exports = function (app) {
         }
     });
 
+    app.get("/api/adventures", function (req, res) {
+        db.Adventures.findAll({}).then(function (dbAdventure) {
+            res.json(dbAdventure);
+        });
+    });
+
 };
 
 
