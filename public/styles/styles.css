@@ -1,8 +1,13 @@
 .list-group-item {
   line-height: 2.5;
 }
-
+.container-fluid,
 form.signup,
 form.login {
   margin-top: 50px;
+  float: left;
+}
+.row{
+  margin: 110px;
+  padding: 100px;
 }
