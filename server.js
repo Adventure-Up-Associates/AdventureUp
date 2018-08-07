@@ -11,8 +11,13 @@ var db = require("./models");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+var expresshandlebar = require("express-handlebars");
+
+app.engine("handlebars", expresshandlebar({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
 // Middleware
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static("public"));
 // We need to use sessions to keep track of our user's login status

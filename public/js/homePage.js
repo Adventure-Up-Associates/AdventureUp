@@ -1,10 +1,13 @@
 $(document).ready(function () {
+    $.get("/api/user_data").then(function (data) {
+        $(".member-name").text(data.email);
+    });
 
     var easyBtnRandomizer = $(".easybtn");
     var mediumBtnRandomizer = $(".mediumbtn");
     var hardBtnRandomizer = $(".hardbtn");
     var adventureContent = $(".randomized-content");
-    var newHtml = "";
+    var newHtml;
 
     easyBtnRandomizer.on("click", function (event) {
         event.preventDefault();
@@ -41,12 +44,15 @@ $(document).ready(function () {
             $.get("/api/adventures/" + id, function (randomAdventure) {
                 console.log(randomAdventure);
                 adventureContent.empty();
-                newHtml = $("<h2>");
-                newHtml.data("adventureId", randomAdventure.id);
-                var temp = "<p> ID: " + randomAdventure.id + "</p>";
-                temp += "<p> Name: " + randomAdventure.title + "</p>";
-                newHtml.append(temp);
-                cb(newHtml);
+
+                var aTag = $("<a>").attr("href", "/adventureDetails/" + randomAdventure.id).html("<h2>" + randomAdventure.title + "</h2>");
+                // newHtml = $("<h2>");
+                // newHtml.attr("data-adventureId", randomAdventure.id);
+                // var temp = "<p> ID: " + randomAdventure.id + "</p>";
+                // var temp = "<p>" + randomAdventure.title + "</p>";
+                // newHtml.append(temp);
+                // cb(newHtml);
+                cb(aTag);
             });
         });
     }
