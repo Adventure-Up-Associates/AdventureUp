@@ -58,6 +58,12 @@ module.exports = function (app) {
         });
     });
 
+    app.get("/api/adventures/:id", function (req, res) {
+        db.Adventures.findOne({ where: { id: req.params.id } }).then(function (dbAdventure) {
+            res.json(dbAdventure);
+        });
+    });
+
 };
 
 
