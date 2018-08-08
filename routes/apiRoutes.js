@@ -30,6 +30,17 @@ module.exports = function (app) {
         });
     });
 
+    app.post("/api/addAdventures", function (req, res) {
+        db.Adventures.create({
+            title: req.body.title,
+            description: req.body.description,
+            location: req.body.location,
+            difficulty: req.body.difficulty
+        }).then(function (data) {
+            res.json("/adventureDetails/" + data.dataValues.id);
+        });
+    });
+
     // Route for logging user out
     app.get("/logout", function (req, res) {
         req.logout();
