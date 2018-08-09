@@ -30,6 +30,17 @@ module.exports = function (app) {
         });
     });
 
+    app.post("/api/addAdventures", function (req, res) {
+        db.Adventures.create({
+            title: req.body.title,
+            description: req.body.description,
+            location: req.body.location,
+            difficulty: req.body.difficulty
+        }).then(function (data) {
+            res.json("/adventureDetails/" + data.dataValues.id);
+        });
+    });
+
     // Route for logging user out
     app.get("/logout", function (req, res) {
         req.logout();
@@ -54,6 +65,12 @@ module.exports = function (app) {
 
     app.get("/api/adventures", function (req, res) {
         db.Adventures.findAll({}).then(function (dbAdventure) {
+            res.json(dbAdventure);
+        });
+    });
+
+    app.get("/api/adventures/:id", function (req, res) {
+        db.Adventures.findOne({ where: { id: req.params.id } }).then(function (dbAdventure) {
             res.json(dbAdventure);
         });
     });

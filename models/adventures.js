@@ -11,11 +11,11 @@ module.exports = function (sequelize, DataTypes) {
         },
         // The password cannot be null
         description: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT("medium"),
             allowNull: false
         },
         location: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT("tiny"),
             allowNull: false
         },
         difficulty: {

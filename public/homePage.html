@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <title>Adventure Up Utah!</title>
@@ -40,6 +40,19 @@
             <div class="navbar-header">
 
 
+</head>
+
+<!-- <body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"> -->
+                <a class="navbar-brand" href="/addNewRecord">
+                    Add new adventure!
+                </a>
+                <a class="navbar-brand" href="/register">
+                    Register
+                </a>
                 <a class="navbar-brand" href="/login">
                     Sign In
                 <a class="navbar-brand" href="/addNewRecord">
@@ -49,8 +62,8 @@
                 </a>    
                     <!-- if user is signed in, replace inner text with this: -->
                     <!-- <h2>You have been logged in,
-                        <span class="member-name"></span>
-                    </h2> -->
+                                <span class="member-name"></span>
+                            </h2> -->
                 </a>
             </div>
         </div>
@@ -90,12 +103,86 @@
 
 
 
+
+    
+
+
+
+
+    <div class="header-line"></div>
+
+
+    <div id="randomize">
+        <div class="container">
+            <h1>Choose your Adventure!</h1>
+
+            <div class="row">
+                <!-- div class="col-sm-4"> -->
+            </div>
+
+            <div id="machine1" class="randomizeMachine">
+                <div class="text-center">
+                    Doughnut Falls, Big Cottonwood Canyon, UT
+
+                </div>
+                <div class="text-center">
+                    Stewart Falls Trail, Sundance, UT
+
+                </div>
+                <div class="text-center">
+                    The Fiery Furnace, Arches National Park
+
+                </div>
+                <div class="text-center">
+                    Leprechaun Canyon, Lake Powell, UT
+
+                </div>
+            </div>
+            <div id="machine1Result" class="col-xs-4 machineResult"></div>
+        </div>
+
+
+
+        <div class="btn-group btn-group-justified" role="group">
+            <button id="randomizeButton" type="button" class="btn btn-danger btn-lg">Shuffle</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+            <pre><code id="codeBlock2"></code></pre>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script id="codeScript2">
+        const btn = document.querySelector('#randomizeButton');
+        const results = {
+            machine1: document.querySelector('#planeMachine')
+
+        };
+        const el1 = document.querySelector('#machine1');
+
+        const machine1 = new SlotMachine(el1, { active: 0 });
+
+
+        function onComplete(active) {
+            results[this.element.id].innerText = `Index: ${this.active}`;
+        }
+
+        btn.addEventListener('click', () => {
+            machine1.shuffle(5, onComplete);
+
+        });
+    </script>
+
+
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/homePage.js"></script> -->
+
 </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/homePage.js"></script>
-    
 </body>
 
 </html>
