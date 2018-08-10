@@ -7,7 +7,6 @@ $(document).ready(function () {
     var mediumBtnRandomizer = $(".mediumbtn");
     var hardBtnRandomizer = $(".hardbtn");
     var adventureContent = $(".randomized-content");
-    var newHtml;
 
     easyBtnRandomizer.on("click", function (event) {
         event.preventDefault();

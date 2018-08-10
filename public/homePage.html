@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>jQuery Slot Machine</title>
+    <title>Adventure Up Utah!</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
 
@@ -60,13 +60,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <button type="button" class="btn btn-success easybtn">Easy</button>
+                <button type="button" class="btn btn-success easybtn" id="randomizeButton1">Easy</button>
             </div>
             <div class="col-md-4">
-                <button type="button" class="btn btn-warning mediumbtn">Medium</button>
+                <button type="button" class="btn btn-warning mediumbtn" id="randomizeButton2">Medium</button>
             </div>
             <div class="col-md-4">
-                <button type="button" class="btn btn-danger hardbtn">Difficult</button>
+                <button type="button" class="btn btn-danger hardbtn" id="randomizeButton3">Difficult</button>
             </div>
         </div>
         <br>
@@ -109,9 +109,9 @@
 
 
 
-        <div class="btn-group btn-group-justified" role="group">
+        <!-- <div class="btn-group btn-group-justified" role="group">
             <button id="randomizeButton" type="button" class="btn btn-danger btn-lg">Shuffle</button>
-        </div>
+        </div> -->
 
     </div>
 
@@ -122,7 +122,9 @@
     </div>
 
     <script id="codeScript2">
-        const btn = document.querySelector('#randomizeButton');
+        const btn1 = document.querySelector('#randomizeButton1');
+        const btn2 = document.querySelector('#randomizeButton2');
+        const btn3 = document.querySelector('#randomizeButton3');
         const results = {
             machine1: document.querySelector('#planeMachine')
 
@@ -136,9 +138,14 @@
             results[this.element.id].innerText = `Index: ${this.active}`;
         }
 
-        btn.addEventListener('click', () => {
+        btn1.addEventListener('click', () => {
             machine1.shuffle(5, onComplete);
-
+        });
+        btn2.addEventListener('click', () => {
+            machine1.shuffle(5, onComplete);
+        });
+        btn3.addEventListener('click', () => {
+            machine1.shuffle(5, onComplete);
         });
     </script>
 
