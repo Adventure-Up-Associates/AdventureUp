@@ -77,73 +77,50 @@
     <div class="containerTwo">
         <div class="btn-custom">
             <div class="row">
-                <button type="button" class="btn btn-primary btn-lg btn-block" class="btn btn-success easybtn" id="randomizeButton1">EASY</button>
-                <button type="button" class="btn btn-warning btn-lg btn-block" class="btn btn-warning mediumbtn" id="randomizeButton2">MEDIUM</button>
-                <button type="button" class="btn btn-danger btn-lg btn-block" class="btn btn-danger hardbtn" id="randomizeButton3">HARD</button>
-
-                <!-- <div class="row"> -->
-                <!-- <button type="button" class="btn btn-success easybtn">Easy</button>
-            </div>
-            <div class="col-md-4">
-                <button type="button" class="btn btn-warning mediumbtn" id="randomizeButton2">Medium</button>
-            </div>
-            <div class="col-md-4">
-                <button type="button" class="btn btn-danger hardbtn" id="randomizeButton3">Difficult</button>
-            </div>
-        </div>
-        <br>
-        this code has been moved into the slot machine
-        <div class="row randomized-content">
-            randomized content created here
-        </div> -->
-            </div>
-        </div>
-
-
-        <div class="containerThree">
-
-            <div class="header-line"></div>
-
-            <div class="row h-100 justify-content-center align-items-center">
-                <div id="randomize">
-                    <div class="container">
-                        <h1>Choose your Adventure!</h1>
-
-                        <div class="row">
-                            <!-- div class="col-sm-4"> -->
-                        </div>
-
-                        <div id="machine1" class="randomizeMachine">
-                            <div class="text-center">
-                                Doughnut Falls, Big Cottonwood Canyon, UT
-
-                            </div>
-                            <div class="text-center">
-                                Stewart Falls Trail, Sundance, UT
-
-                            </div>
-                            <div class="text-center randomized-content">
-                                <!-- randomized content created here -->
-
-                            </div>
-                            <div class="text-center">
-                                Leprechaun Canyon, Lake Powell, UT
-
-                            </div>
-                        </div>
-                        <div id="machine1Result" class="col-xs-4 machineResult"></div>
-                    </div>
-                </div>
-
-
-
-                <!-- <div class="btn-group btn-group-justified" role="group">
-            <button id="randomizeButton" type="button" class="btn btn-danger btn-lg">Shuffle</button>
-        </div> -->
-
+                <button type="button" class="btn btn-primary btn-lg btn-block easybtn" id="randomizeButton1">EASY</button>
+                <button type="button" class="btn btn-warning btn-lg btn-block mediumbtn" id="randomizeButton2">MEDIUM</button>
+                <button type="button" class="btn btn-danger btn-lg btn-block hardbtn" id="randomizeButton3">HARD</button>
             </div>
         </div>
     </div>
+
+    <div class="containerThree">
+
+        <div class="header-line"></div>
+
+        <div class="row h-100 justify-content-center align-items-center">
+            <div id="randomize">
+                <div class="container">
+                    <h1>Choose your Adventure!</h1>
+
+                    <!-- <div class="row"> -->
+                        <!-- div class="col-sm-4"> -->
+                    <!-- </div> -->
+
+                    <div id="machine1" class="randomizeMachine">
+                        <div class="text-center">
+                            Doughnut Falls, Big Cottonwood Canyon, UT
+
+                        </div>
+                        <div class="text-center">
+                            Stewart Falls Trail, Sundance, UT
+
+                        </div>
+                        <div class="text-center randomized-content">
+                            <!-- randomized content created here -->
+
+                        </div>
+                        <div class="text-center">
+                            Leprechaun Canyon, Lake Powell, UT
+
+                        </div>
+                    </div>
+                    <div id="machine1Result" class="col-xs-4 machineResult"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <!-- <div class="col-sm-10 offset-sm-1">
             <pre><code id="codeBlock2"></code></pre> -->
@@ -160,7 +137,9 @@
         };
         const el1 = document.querySelector('#machine1');
 
-        const machine1 = new SlotMachine(el1, { active: 0 });
+        const machine1 = new SlotMachine(el1, {
+            active: 0
+        });
 
 
         function onComplete(active) {
