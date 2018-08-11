@@ -33,7 +33,7 @@ form.login {
   height: 100%;
  }
  .bg {
-  background: url('../images/easton-oliver-617180-unsplash.jpg') no-repeat center center;
+  background: url('/Users/wesmora/dev/uofu/Homework/project2/public/images/easton-oliver-617180-unsplash.jpg') no-repeat center center;
   position: fixed;
   width: 100%;
   height: 100%; 
@@ -43,7 +43,7 @@ form.login {
 }
 
 .bg1{
-  background: url('../images/nicole-harrington-545888-unsplash.jpg')no-repeat center center;
+  background: url('/Users/wesmora/dev/uofu/Homework/project2/public/images/nicole-harrington-545888-unsplash.jpg')no-repeat center center;
   position: fixed;
   width: 100%;
   height: 100%; 
@@ -55,9 +55,9 @@ form.login {
 h1{
   font-family: 'Anton', sans-serif;
   /* color: blueviolet; */
-  font-size: 2.5rem;
+  font-size: 25px;
   /* padding-left: 100px; */
-  margin: 50px; 
+  margin: 50px; */
   text-align: center;
   
 }
@@ -99,10 +99,10 @@ code {
   margin: 0 auto;
 }
 
-/* h1 {
+h1 {
   text-align: center;
   padding-bottom: 25px;
-} */
+}
 
 .container {
   padding-top: 50px;
