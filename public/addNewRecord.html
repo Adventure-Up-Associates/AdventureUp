@@ -32,7 +32,7 @@
 </head>
 
 <body>
-        <body background="/Users/wesmora/dev/uofu/Homework/project2/public/images/easton-oliver-617180-unsplash.jpg">
+        <body img background="/Users/wesmora/dev/uofu/Homework/project2/public/images/cameron-kirby-100946-unsplash.jpg">
             <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -42,7 +42,13 @@
             </div>
         </div>
     </nav>
-    
+    <h1>Adventure up UTAH!</h1>
+    <br>
+    <h1>Create An Adventure</h1>
+    <!-- <div class="container h-100"> -->
+            <div class="row h-100 justify-content-center align-items-center">
+                    <!-- <form class="col-12"> -->
+                
     <div class="row">
     <form class="clearfix mb-4" action="POST">
         <div class="form-group">
@@ -62,7 +68,12 @@
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" id="radio_easy" name="customRadioInline" class="custom-control-input" data-difficulty="easy">
                 <label class="custom-control-label" for="radio_easy">Easy (for everybody)</label>
+                <!-- <label for="Easy">Easy: </label>
+                <imput name="difficulty" id="easy" type="radio"
+                value="EASY" -->
             </div>
+        </form>
+    <form>
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" id="radio_medium" name="customRadioInline" class="custom-control-input" data-difficulty="medium">
                 <label class="custom-control-label" for="radio_medium">Medium (for those not afraid to get a little dirty)</label>
@@ -71,9 +82,21 @@
                 <input type="radio" id="radio_hard" name="customRadioInline" class="custom-control-input" data-difficulty="hard">
                 <label class="custom-control-label" for="radio_hard">Difficult (not for the faint of heart, for those wanting a challenge!)</label>
             </div>
-        </div>
+        
+
+
+        <select name="option">
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+        </select>
+<br>
+<br>
         <button id="submit" class="btn btn-primary float-right">Submit</button>
+    </div>
+</div>
     </form>
+</div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/addNewRecord.js"></script>
