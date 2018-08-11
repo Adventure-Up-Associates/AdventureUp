@@ -3,7 +3,7 @@ var path = require("path");
 var db = require("../models");
 
 // Requiring our custom middleware for checking if a user is logged in
-var isAuthenticated = require("../config/middleware/isAuthenticated");
+// var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function (app) {
 
@@ -14,7 +14,7 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, "../public/homePage.html"));
     });
 
-    app.get("/homePageSignedIn", isAuthenticated, function (req, res) {
+    app.get("/homePageSignedIn", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/homePageSignedIn.html"));
     });
 

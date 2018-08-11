@@ -52,7 +52,7 @@ form.login {
   z-index: -3;
 }
 
-h1, h2 {
+h1{
   font-family: 'Anton', sans-serif;
   /* color: blueviolet; */
   font-size: 25px;
@@ -65,7 +65,7 @@ h1, h2 {
 /* ----------------------------------------------- */
 
 
-@charset "utf-8";
+/* @charset "utf-8"; */
 /* CSS Document */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto);
@@ -214,4 +214,8 @@ img {
   margin: 0 auto;
   max-height: 100%;
   max-width: 100%;
+}
+
+.slotMachineContainer {
+    color: white;
 }
