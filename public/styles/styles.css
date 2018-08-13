@@ -5,6 +5,8 @@
 /* @import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One); */
 
 
+
+
 .list-group-item {
   line-height: 2.5;
 }
@@ -12,13 +14,14 @@
 form.signup,
 form.login {
   font-family: 'Anton', sans-serif;
-  /* margin-top: 5px; */
-  /* float: right; */
+  margin-top: 5px;
+  font-size: 35px;
 }
 .row{
-  font-family: 'Anton', sans-serif;
-  margin: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0px 80px 0px;
   padding: 50px;
+  font-size: 20px;
   
   
   /* background-image: url("/Users/wesmora/dev/uofu/Homework/project2/public/images/bas-de-korte-572422-unsplash.jpg"); */
@@ -28,8 +31,35 @@ form.login {
 
   padding: 50px;
  }
+.navbar{
+  background-color: #212529;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  /* text-shadow:0 0 30px; */
+}
+.navbar-brand{
+  color: white;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  /* padding-top: 10px; */
+  /* text-shadow:0 0 30px #333; */
+}
+ .table{
+  /* color: white; */
+  background-color:#ff851b;
+  font-size: 20px;
+  color: #212529;
+  /* padding: 100px; */
+  /* box-shadow: #4e6175; */
+  /* opacity: .3; */
+ }
 
- .containerThree {
+ .randomized-content{
+   margin: 10px;
+   /* opacity: .2; */
+ }
+ .blurred-box .containerThree {
   position: relative;
      width: 250px;
      height: 350px;
@@ -39,15 +69,14 @@ form.login {
      border-radius: 2px;
      overflow: hidden;
  }
- .containerThree:after {
+ .blurred-box:after .containerThree:after {
   content: '';
   width: 300px;
   height: 250px;
   background: inherit; 
   position: absolute;
   left: -25px;
-  /* left position right: 0; */
-  position:right;
+  left position right: 0;
   top: -25px;  
   top position 
   bottom: 0;
@@ -59,7 +88,7 @@ form.login {
   height: 100%;
  }
  .bg {
-  background: url('../images/easton-oliver-617180-unsplash.jpg') no-repeat center center;
+  /* background: url('../images/cayetano-gil-532119-unsplash.jpg') no-repeat center center; */
   /* background: url('../images/cayetano-gil-532119-unsplash.jpg') no-repeat center center; */
   position: fixed;
   width: 100%;
@@ -67,38 +96,41 @@ form.login {
   top:0;
   left:0;
   z-index: -3;
-  /* margin-top: -200px; */
+  margin-top: -200px;
 }
 
 .bg1{
-  background: url('../images/nicole-harrington-545888-unsplash.jpg')no-repeat center center;
+  background: url('../images/omer-salom-519617-unsplash.jpg')no-repeat center center;
   position: fixed;
   width: 100%;
   height: 100%; 
   top:0;
   left:0;
   z-index: -3;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h1{
   /* font-family: 'Anton', sans-serif; */
   /* color: blueviolet; */
-<<<<<<< Updated upstream
-  font-size: 25px;
-  /* padding-left: 100px; */
-  margin: 50px;
-=======
   font-size: 50px;
   /* padding-left: 100px; */
-  /* margin: 50px;  */
->>>>>>> Stashed changes
+  margin: 25px; 
   text-align: center;
-  
-}
-
-h1 {
   font-family: 'permanent marker', serif;
   text-shadow: 4px 4px 4px #aaa;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #a9b119;
+}
+
+.title-text{
+  font-size: 20px;
 }
 /* ----------------------------------------------- */
 
@@ -137,16 +169,10 @@ code {
   margin: 0 auto;
 }
 
-<<<<<<< Updated upstream
-h1 {
-  text-align: center;
-  padding-bottom: 25px;
-=======
 .machine1{
   text-align: center;
   padding-bottom: 25px;
   font-size: 20px;
->>>>>>> Stashed changes
 }
 
 .container {
@@ -194,10 +220,13 @@ header a {
  * SlotMachine
  */
 #randomize {
-  border-bottom: 10px solid rgb(72, 158, 48);
+  border-bottom: 20px solid #007bff;
   /* background-color: rgb(131, 165, 92); */
-  border-top: 20px #B8312F;
+  /* border-top: 20px #B8312F; */
   /* opacity: 90%; */
+  background-position-x: 25px;
+  
+
 }
 
 #randomize .row > div.col-sm-4 > div {
@@ -247,8 +276,8 @@ header a {
   padding: 10px !important;
 }
 
-/* html, body, background { */
-  height: 100%;
+html, body, background {
+  height: 40%;
   margin: 0;
   padding: 0;
 }
@@ -257,7 +286,7 @@ img {
   padding: 0;
   display: block;
   margin: 0 auto;
-  max-height: 100%;
+  max-height: 50%;
   max-width: 100%;
 }
 
@@ -268,7 +297,7 @@ img {
 body{
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-size: cover; */
+  background-size: cover;
   background-position: absolute;
   background:url('../images/easton-oliver-617180-unsplash.jpg')no-repeat center center;
   width: 100%;
@@ -278,3 +307,5 @@ body{
    font-weight: 400;
   -webkit-font-smoothing: antialiased; 
  }
+
+ 
