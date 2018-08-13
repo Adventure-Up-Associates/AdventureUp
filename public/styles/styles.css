@@ -42,7 +42,7 @@ form.login {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 20px;
-  /* padding-top: 10px; */
+  padding-top: 10px;
   /* text-shadow:0 0 30px #333; */
 }
  .table{
@@ -109,7 +109,7 @@ form.login {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-h1{
+h1 {
   /* font-family: 'Anton', sans-serif; */
   /* color: blueviolet; */
   font-size: 50px;
@@ -125,6 +125,17 @@ h2 {
   font-size: 25px;
   text-align: center;
   color: #a9b119;
+}
+
+p, .member-name{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+.form-group {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  color: white;
 }
 
 .title-text{
@@ -222,7 +233,7 @@ header a {
   /* background-color: rgb(131, 165, 92); */
   /* border-top: 20px #B8312F; */
   /* opacity: 90%; */
-  background-position-x: 25px;
+  /* background-position-x: 25px; */
   
 
 }
@@ -250,12 +261,14 @@ header a {
 }
 
 .randomizeMachine {
-  width: 400px;
-  height: 35px;
-  font-size: 20px;
+  width: 800px;
+  height: 63px;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   /* opacity: .2; */
   /* background: url('/Users/wesmora/dev/uofu/Homework/project2/public/images/easton-oliver-617180-unsplash.jpg') no-repeat center center; */
   margin-right: 20%;
+
 }
 
 #randomize .btn-group {
