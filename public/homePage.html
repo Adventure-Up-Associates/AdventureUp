@@ -95,7 +95,7 @@
 
                         </div>
                         <div class="text-center">
-                            Stewart Falls Trail, Sundance, UT
+                            Sprinkling unicorn pixie dust on your page to make it glitter
 
                         </div>
                         <div class="text-center randomized-content">
@@ -103,7 +103,15 @@
 
                         </div>
                         <div class="text-center">
-                            Leprechaun Canyon, Lake Powell, UT
+                            Removing crappy ideas from random generator
+
+                        </div>
+                        <div class="text-center">
+                            Loading fun ideas that you may want to do!
+
+                        </div>
+                        <div class="text-center">
+                            Creating fun idea matrix that you want to see
 
                         </div>
                     </div>
@@ -125,7 +133,11 @@
         const el1 = document.querySelector('#machine1');
 
         const machine1 = new SlotMachine(el1, {
-            active: 0
+            active: 0,
+            randomize() {
+                return 2;
+            }
+
         });
 
 
