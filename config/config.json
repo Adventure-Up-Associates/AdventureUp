@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
+    "password": "2003Audi",
     "database": "adventureUpdb",
     "host": "localhost",
     "dialect": "mysql"
